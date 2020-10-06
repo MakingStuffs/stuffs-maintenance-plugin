@@ -24,6 +24,11 @@ require_once(plugin_dir_path(__FILE__)  . 'inc/actions.php');
 require_once(plugin_dir_path(__FILE__) . 'inc/admin-settings.php');
 
 /**
+ * Import custom filters
+ */
+require_once(plugin_dir_path(__FILE__) . 'inc/filters.php');
+
+/**
  * Check wether maintenance is active within the plugin and then check whether the 
  * wp .maintenance file is present in the home directory. Create one if it isnt there. 
  * 
