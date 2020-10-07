@@ -125,7 +125,8 @@ if (!function_exists('stuffs_maintenance_add_mailchimp_member')) {
                 "subscriber_hash"    => $hash
             ]);
 
-            if (isset($member)) {
+
+            if (isset($member) && $message !== null) {
                 echo json_encode([
                     "success"   => true,
                     "title"     => "You're Already Registered",
